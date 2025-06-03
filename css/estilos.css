@@ -1,0 +1,453 @@
+.inicio-body {
+  background-color: #e3f2fd;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.inicio-container {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+}
+
+.logo-wrapper {
+  margin-bottom: 20px;
+}
+
+.logo-inicio {
+  width: 160px;
+  height: auto;
+}
+
+.bienvenida {
+  font-size: 20px;
+  margin: 10px 0 20px 0;
+  color: #01579b;
+}
+
+.botones-inicio button {
+  margin: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: 2px solid #0288d1;
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botones-inicio button:hover {
+  background-color: #e0f7fa;
+}
+
+.login-box {
+  margin-top: 20px;
+}
+
+.login-box input {
+  padding: 10px;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.login-box button {
+  padding: 10px 20px;
+  margin-top: 12px;
+  background-color: #0288d1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-box button:hover {
+  background-color: #0277bd;
+}
+
+
+.cuenta-botones {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.boton-cuenta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 17px;
+  padding: 14px 20px;
+  background-color: #0288d1;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.boton-cuenta:hover {
+  background-color: #0277bd;
+  transform: translateY(-2px);
+}
+
+.boton-cuenta span {
+  font-size: 20px;
+}
+
+.boton-cuenta.cerrar {
+  background-color: #e53935;
+}
+
+.boton-cuenta.cerrar:hover {
+  background-color: #c62828;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.web-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.web-section {
+  margin-bottom: 40px;
+}
+
+.web-section h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #01579b;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.web-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* FORMULARIO */
+.formulario {
+  max-width: 700px;
+  margin: auto;
+  text-align: left;
+}
+
+.formulario label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.formulario button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #0277bd;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.formulario button:hover {
+  background-color: #01579b;
+}
+
+.mensaje-oculto {
+  text-align: center;
+  color: green;
+  margin-top: 20px;
+  font-weight: bold;
+  display: none;
+}
+
+.web-section h2 {
+  text-align: center;
+}
+
+.tabla-pagos {
+  width: 90%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-size: 16px;
+}
+
+.tabla-pagos th {
+  background-color: #01579b;
+  color: white;
+  padding: 15px;
+}
+
+.tabla-pagos td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.tabla-pagos tr:hover {
+  background-color: #e1f5fe;
+}
+
+.tabla-pagos button {
+  background-color: #0288d1;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.tabla-pagos button:hover {
+  background-color: #0277bd;
+}
+
+main h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contacto-box {
+  max-width: 700px;
+  margin: 30px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.contacto-box h3 {
+  margin-top: 20px;
+  color: #01579b;
+}
+
+.contacto-box a {
+  color: #0288d1;
+  text-decoration: none;
+}
+
+.contacto-box a:hover {
+  text-decoration: underline;
+}
+
+.contacto-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+
+
+
+
+
+
+/* === RESET BÁSICO === */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e3f2fd;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* === ENCABEZADO === */
+header, .web-header {
+  background-color: #01579b;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 2px solid #0288d1;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.web-header-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: text-decoration 0.2s;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+.web-section {
+  margin-bottom: 50px;
+}
+
+.web-section h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #01579b;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.web-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+
+/* === LISTAS DE CUENTA === */
+.lista-cuenta {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lista-cuenta li a {
+  display: block;
+  padding: 12px 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-left: 5px solid #0288d1;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #01579b;
+  transition: all 0.2s;
+}
+
+.lista-cuenta li a:hover {
+  background-color: #e0f2f1;
+  border-left-color: #01579b;
+  color: #013246;
+}
+
+.lista-cuenta .cerrar-sesion {
+  background-color: #ffcdd2;
+  border-left-color: #d32f2f;
+  color: #b71c1c;
+}
+
+.lista-cuenta .cerrar-sesion:hover {
+  background-color: #ef9a9a;
+  color: #7f0000;
+}
+
+/* === NOVEDADES === */
+.novedades-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.novedades-grid div {
+  background-color: #f0f9ff;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.novedad-titulo {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #0277bd;
+}
+
+.web-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+
+/* === AJUSTES ESPECIALES PARA INICIO (DASHBOARD) === */
+
+
+
+
+/* Imagen del mapa responsive y centrada */
+.web-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+

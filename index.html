@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RedHídricaMetropolitana</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="inicio-body">
+  <div class="inicio-container">
+    <h1 class="titulo-inicio">RedHídricaMetropolitana</h1>
+
+    <div class="logo-wrapper">
+      <img src="img/logo.png" alt="Logo Red Hídrica" class="logo-inicio">
+    </div>
+
+    <p class="bienvenida">¡Bienvenido @Usuario!</p>
+
+    <div class="botones-inicio">
+      <button onclick="mostrarLogin()">Contraseña</button>
+      <button disabled>Reconocimiento Facial</button>
+    </div>
+
+    <div id="login-box" class="login-box oculto">
+      <label for="password">Ingresa tu contraseña:</label>
+      <input type="password" id="password" placeholder="••••••">
+      <button onclick="iniciarSesion()">Iniciar sesión</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+

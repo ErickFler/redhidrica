@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reportes - Red Hídrica</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Red Hídrica Metropolitana</h1>
+    <nav>
+      <ul>
+        <li><a href="dashboard.html">Inicio</a></li>
+        <li><a href="reportes.html">Reportes</a></li>
+        <li><a href="pagos.html">Pagos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="index.html">Cerrar Sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Reportar un problema</h2>
+    <form class="formulario" onsubmit="procesarReporte(event)">
+      <label for="direccion">Dirección del problema:</label>
+      <input type="text" id="direccion" required>
+
+      <label for="tipo">Tipo de problema:</label>
+      <select id="tipo" required>
+        <option value="">-- Selecciona una opción --</option>
+        <option>Fuga de agua</option>
+        <option>Drenaje tapado</option>
+        <option>Falta de suministro</option>
+        <option>Otro</option>
+      </select>
+
+      <label for="descripcion">Descripción:</label>
+      <textarea id="descripcion" rows="4" required></textarea>
+
+      <label for="horario">Rango de horario:</label>
+      <input type="text" id="horario" placeholder="Ej. 6:00 - 8:30 AM" required>
+
+      <label for="incidencia">Incidencia estimada:</label>
+      <input type="text" id="incidencia" placeholder="Ej. 3 casas afectadas" required>
+
+      <label for="urgencia">Nivel de urgencia:</label>
+      <select id="urgencia" required>
+        <option value="">-- Selecciona una opción --</option>
+        <option>Baja</option>
+        <option>Media</option>
+        <option>Alta</option>
+      </select>
+
+      <label for="evidencia">Adjuntar evidencia:</label>
+      <input type="file" id="evidencia">
+
+      <button type="submit">Presentar reporte</button>
+    </form>
+
+    <p id="mensaje-exito" class="mensaje-oculto">✅ Su reporte ha sido enviado correctamente. Será atendido a la brevedad.</p>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
