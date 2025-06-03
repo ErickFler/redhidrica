@@ -9,6 +9,18 @@
   padding: 20px;
 }
 
+.web-container, .dashboard-wide {
+  max-width: 80%;
+  margin: 40px auto;
+  padding: 0 30px;
+}
+
+body.dashboard main.web-container {
+  max-width: 80% !important;
+  padding: 0 30px !important;
+}
+
+
 .inicio-container {
   background-color: white;
   padding: 40px 30px;
@@ -131,12 +143,6 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
-}
-
-.web-container {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 0 20px;
 }
 
 .web-section {
@@ -285,10 +291,11 @@ main h2 {
 }
 
 
-
-
-
-
+.dashboard-full {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
 
 /* === RESET BÁSICO === */
 body {
@@ -320,12 +327,16 @@ header, .web-header {
 }
 
 .web-header-container {
-  max-width: 1000px;
+  max-width: 1400px; /* o 100% si usas porcentaje */
   margin: auto;
-  padding: 0 20px;
+  padding: 0 30px;
 }
 
-nav ul {
+.web-header nav a:hover {
+  text-decoration: underline;
+}
+
+.web-header nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -334,12 +345,22 @@ nav ul {
   margin: 10px 0 0 0;
 }
 
-nav a {
+.web-header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.web-header nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
   transition: text-decoration 0.2s;
 }
+
 
 nav a:hover {
   text-decoration: underline;
@@ -407,23 +428,6 @@ nav a:hover {
   color: #7f0000;
 }
 
-/* === NOVEDADES === */
-.novedades-grid {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.novedades-grid div {
-  background-color: #f0f9ff;
-  padding: 15px;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
 .novedad-titulo {
   text-align: center;
   font-weight: bold;
@@ -433,21 +437,63 @@ nav a:hover {
 
 .web-img {
   width: 100%;
-  border-radius: 8px;
-  margin-top: 10px;
+  height: 500px; /* antes: max-height: 400px */
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 
-/* === AJUSTES ESPECIALES PARA INICIO (DASHBOARD) === */
-
-
-
-
-/* Imagen del mapa responsive y centrada */
-.web-img {
+.dashboard-wide .web-card {
   width: 100%;
-  max-height: 400px;
-  object-fit: cover;
+}
+
+
+/* Forzar estilos de navegación SOLO en dashboard */
+body.dashboard .web-header nav ul {
+  justify-content: center !important;
+  display: flex !important;
+  gap: 20px !important;
+  padding: 0 !important;
+  margin: 10px 0 0 0 !important;
+}
+
+body.dashboard .web-header nav a {
+  color: white !important;
+  text-decoration: none !important;
+  font-weight: bold !important;
+}
+
+.novedades-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.novedades-grid div {
+  width: 420px;
+  height: 300px;
+  background-color: #f0f9ff;
+  padding: 12px;
   border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.novedades-grid img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+
+.novedad-titulo {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #0277bd;
 }
 
