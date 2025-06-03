@@ -2,12 +2,23 @@
   background-color: #e3f2fd;
   font-family: Arial, sans-serif;
   margin: 0;
+  padding: 0;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  padding: 20px;
 }
+
+.inicio-container {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
 
 .web-container, .dashboard-wide {
   max-width: 80%;
@@ -21,23 +32,17 @@ body.dashboard main.web-container {
 }
 
 
-.inicio-container {
-  background-color: white;
-  padding: 40px 30px;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  max-width: 450px;
-  width: 100%;
-  text-align: center;
-}
 
 .logo-wrapper {
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .logo-inicio {
   width: 160px;
   height: auto;
+  border-radius: 8px;
 }
 
 .bienvenida {
