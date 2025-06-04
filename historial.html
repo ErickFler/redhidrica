@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pagos - Red Hídrica</title>
+  <title>Historial - Red Hídrica</title>
   <link rel="stylesheet" href="css/estilos.css">
   <link rel="stylesheet" href="css/menu-operaciones.css">
 </head>
-<body class="web-body">
+<body class="web-body dashboard">
+
+  <!-- Encabezado moderno -->
   <header class="web-header">
     <div class="web-header-container">
       <h1>Red Hídrica Metropolitana</h1>
       <nav>
         <ul style="display: flex; gap: 20px; align-items: center;">
           <li><a href="dashboard.html">Inicio</a></li>
-
-          <!-- Menú moderno -->
           <li class="menu-operaciones">
             <button type="button" class="operaciones-btn" id="btnOperaciones">Operaciones</button>
             <div class="operaciones-dropdown" id="menuOperaciones">
@@ -23,7 +23,6 @@
               <a href="reportes.html">Reportes</a>
             </div>
           </li>
-
           <li><a href="historial.html">Historial</a></li>
           <li><a href="contacto.html">Contacto</a></li>
           <li><a href="perfil.html">Mi cuenta</a></li>
@@ -33,39 +32,47 @@
     </div>
   </header>
 
-  <main class="web-container">
+  <!-- Contenido principal -->
+  <main class="web-container dashboard-wide">
     <section class="web-section">
-      <h2>Historial de Pagos</h2>
-      <table class="tabla-pagos">
-        <thead>
-          <tr>
-            <th>Fecha</th>
-            <th>Concepto</th>
-            <th>Monto</th>
-            <th>Estado</th>
-            <th>Recibo</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>2025-05-01</td>
-            <td>Agua y Drenaje</td>
-            <td>$370.00</td>
-            <td>Pendiente</td>
-            <td><button onclick="exportarRecibo()">Exportar</button></td>
-          </tr>
-          <tr>
-            <td>2025-04-01</td>
-            <td>Agua y Drenaje</td>
-            <td>$340.00</td>
-            <td>Pendiente</td>
-            <td><button onclick="exportarRecibo()">Exportar</button></td>
-          </tr>
-        </tbody>
-      </table>
+      <h2>Historial de Actividades</h2>
+      <div class="web-card">
+        <table class="tabla-pagos">
+          <thead>
+            <tr>
+              <th>Fecha</th>
+              <th>Tipo</th>
+              <th>Descripción</th>
+              <th>Estado / Monto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2025-05-01</td>
+              <td>Pago</td>
+              <td>Agua y Drenaje</td>
+              <td>$370.00</td>
+            </tr>
+            <tr>
+              <td>2025-04-15</td>
+              <td>Reporte</td>
+              <td>Fuga de agua en Av. Zaragoza</td>
+              <td>Resuelto</td>
+            </tr>
+            <tr>
+              <td>2025-04-01</td>
+              <td>Pago</td>
+              <td>Agua y Drenaje</td>
+              <td>$340.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
   </main>
 
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
   <script src="js/menu-operaciones.js"></script>
 </body>
 </html>
