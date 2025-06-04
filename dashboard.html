@@ -1,38 +1,29 @@
+<!-- HTML -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Inicio - Red Hídrica</title>
-  <link rel="stylesheet" href="css/estilos.css" />
-  <style>
-    /* Fuerza ocultar cualquier menú desplegable si existe */
-    .dropdown-menu {
-      display: none !important;
-      height: 0 !important;
-      padding: 0 !important;
-      margin: 0 !important;
-      border: none !important;
-      background: transparent !important;
-      box-shadow: none !important;
-      position: absolute !important;
-      top: -9999px !important;
-      opacity: 0 !important;
-      pointer-events: none !important;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Hídrica - Dashboard</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/menu-operaciones.css">
 </head>
 <body class="web-body dashboard">
-
   <header class="web-header">
     <div class="web-header-container">
       <h1>Red Hídrica Metropolitana</h1>
       <nav>
-        <ul>
+        <ul style="display: flex; gap: 20px; align-items: center;">
           <li><a href="dashboard.html">Inicio</a></li>
 
-          <!-- 🔧 Menú ocultado completamente -->
-          <li><a href="#">Operaciones</a></li>
+          <!-- Menú moderno -->
+          <li class="menu-operaciones">
+            <button type="button" class="operaciones-btn" id="btnOperaciones">Operaciones</button>
+            <div class="operaciones-dropdown" id="menuOperaciones">
+              <a href="pagos.html">Pagos</a>
+              <a href="reportes.html">Reportes</a>
+            </div>
+          </li>
 
           <li><a href="historial.html">Historial</a></li>
           <li><a href="contacto.html">Contacto</a></li>
@@ -97,6 +88,7 @@
     </section>
 
   </main>
+  <script src="js/menu-operaciones.js"></script>
 </body>
 </html>
 
