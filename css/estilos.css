@@ -3,8 +3,7 @@
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  height: 100vh;
-  display: flex;
+  height: 100vh; display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -341,24 +340,6 @@ header, .web-header {
   text-decoration: underline;
 }
 
-.web-header nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 0;
-  margin: 10px 0 0 0;
-}
-
-.web-header nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 0;
-  margin: 10px 0 0 0;
-}
-
 .web-header nav a {
   color: white;
   text-decoration: none;
@@ -502,3 +483,119 @@ body.dashboard .web-header nav a {
   color: #0277bd;
 }
 
+/* Navegación principal */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #004c86;
+  border-radius: 4px;
+}
+
+/* === Dropdown corregido === */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-width: 180px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  z-index: 2000;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 12px 18px;
+  color: #01579b;
+  text-decoration: none;
+  font-weight: 500;
+  background-color: white;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #e3f2fd;
+  color: #013246;
+}
+
+/* Botón que sustituye al <a> para evitar el espacio blanco */
+.dropdown-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 15px;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdown-toggle:hover {
+  background-color: #004c86;
+  border-radius: 4px;
+}
+
+/* Corrige el espacio fantasma */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  min-width: 160px;
+  z-index: 2000;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
