@@ -508,29 +508,45 @@ nav ul li a:hover {
   border-radius: 4px;
 }
 
-/* === Dropdown corregido === */
+
+body.dashboard main.web-container {
+  margin-top: 0 !important;
+}
+
+
 .dropdown {
   position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  padding: 10px 15px;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-toggle:hover {
+  background-color: #004c86;
+  border-radius: 4px;
 }
 
 .dropdown-menu {
+  display: none;
   position: absolute;
   top: 100%;
   left: 0;
-  display: none;
   background-color: white;
   border: 1px solid #ccc;
   border-radius: 6px;
   min-width: 180px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  list-style: none;
   padding: 0;
   margin: 0;
-  list-style: none;
-  z-index: 2000;
-}
-
-.dropdown:hover > .dropdown-menu {
-  display: block;
+  z-index: 9999;
 }
 
 .dropdown-menu li {
@@ -547,7 +563,6 @@ nav ul li a:hover {
   color: #01579b;
   text-decoration: none;
   font-weight: 500;
-  background-color: white;
 }
 
 .dropdown-menu li a:hover {
@@ -555,47 +570,20 @@ nav ul li a:hover {
   color: #013246;
 }
 
-/* Botón que sustituye al <a> para evitar el espacio blanco */
-.dropdown-toggle {
-  background: none;
-  border: none;
-  color: white;
-  font-weight: bold;
-  font-size: 16px;
-  cursor: pointer;
-  padding: 10px 15px;
+.dropdown-menu.show {
   display: block;
-  width: 100%;
-  text-align: left;
-}
-
-.dropdown-toggle:hover {
-  background-color: #004c86;
-  border-radius: 4px;
-}
-
-/* Corrige el espacio fantasma */
-.dropdown {
-  position: relative;
-  display: inline-block;
-  line-height: 1;
 }
 
 .dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  display: none;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  background: white;
-  border-radius: 6px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  min-width: 160px;
-  z-index: 2000;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
+  display: none !important;
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  position: absolute !important;
+  top: -9999px !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
 }

@@ -5,6 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Inicio - Red Hídrica</title>
   <link rel="stylesheet" href="css/estilos.css" />
+  <style>
+    /* Fuerza ocultar cualquier menú desplegable si existe */
+    .dropdown-menu {
+      display: none !important;
+      height: 0 !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      border: none !important;
+      background: transparent !important;
+      box-shadow: none !important;
+      position: absolute !important;
+      top: -9999px !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+    }
+  </style>
 </head>
 <body class="web-body dashboard">
 
@@ -14,13 +30,10 @@
       <nav>
         <ul>
           <li><a href="dashboard.html">Inicio</a></li>
-          <li class="dropdown">
-            <button class="dropdown-toggle">Operaciones</button>
-            <ul class="dropdown-menu">
-              <li><a href="pagos.html">Pagos</a></li>
-              <li><a href="reportes.html">Reportes</a></li>
-            </ul>
-          </li>
+
+          <!-- 🔧 Menú ocultado completamente -->
+          <li><a href="#">Operaciones</a></li>
+
           <li><a href="historial.html">Historial</a></li>
           <li><a href="contacto.html">Contacto</a></li>
           <li><a href="perfil.html">Mi cuenta</a></li>
@@ -29,7 +42,6 @@
       </nav>
     </div>
   </header>
-
 
   <main class="web-container dashboard-wide">
 
@@ -87,3 +99,6 @@
   </main>
 </body>
 </html>
+
+
+

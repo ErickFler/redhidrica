@@ -35,3 +35,21 @@ function iniciarSesion() {
     window.location.href = "dashboard.html";
   }
 }
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const toggle = document.getElementById('dropdownToggle');
+  const menu = document.getElementById('dropdownMenu');
+
+  toggle.addEventListener('click', function (e) {
+    e.stopPropagation();
+    menu.classList.toggle('show');
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!menu.contains(e.target) && e.target !== toggle) {
+      menu.classList.remove('show');
+    }
+  });
+});
+
